@@ -116,4 +116,49 @@ body {
   .langue {
     width: 100%;
   }
+  @media only screen and (min-width: 601px) and (max-width: 767px) {
+    /* Styles spécifiques pour les téléphones en paysage */
+    .profile_picture {
+      display:none;
+    } 
+    .left-column,
+    .right-column {
+        width: 100%;
+        float: none;
+    }
+    .header-content,
+    .contact-info {
+        flex-direction: column;
+        align-items:flex-start;
+     }
+     .contact-info {
+      text-align: left;
+      color: #db72ca;
+     }
+    
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item-reconversion h1,
+    .item-reconversion h2 {
+        font-size: 16px;
+    }
+
+    ul {
+        text-align: left;
+        }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .soft_skills,
+    .loisirs,
+    .langue {
+        width: 100%;
+        gap: 20px;
+    }
+  }
   
